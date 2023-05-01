@@ -4,8 +4,8 @@ const { default: mongoose } = require("mongoose");
 require("dotenv").config();
 const cors = require("cors");
 // import the routes into the costant below
-const blogRoutes = require("../backend/routes/blogRoute");
-const userRoute = require("../backend/routes/userRoute");
+const blogRoutes = require("./routes/blogRoute");
+const userRoute = require("./routes/userRoute");
 // To initiate express next line
 const app = express();
 app.use(express.json());
