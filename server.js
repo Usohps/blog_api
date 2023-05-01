@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use((request, response, next) => {
-  console.log(request.method, request.path);
+  // console.log(request.method, request.path);
   next();
 });
 app.use("/api/blog", blogRoutes);
