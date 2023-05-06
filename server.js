@@ -31,4 +31,5 @@ const start = async () => {
 };
 start().catch((err) => {
   console.log(err);
+  throw err
 });
